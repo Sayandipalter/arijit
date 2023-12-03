@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arijit Singh</title>
+    <!-- Add this in the <head> section of your HTML -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <header class="p-3 text-bg-dark">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="./IMG/DLOGO.webp" style="width: 50px; height: 50px; border-radius: 50%;">
+                </a>
+             
+        
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">Trending Songs</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">Go Pro </a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">My Music</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">Podcast</a></li>
+                </ul>
+        
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+                </form>
+        
+                <div class="text-end">
+                  <button type="button" class="btn btn-outline-light me-2">Login</button>
+                  <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+              </div>
+            </div>
+    </header>
+
+    <section class="mid">
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="./IMG/ARIJITW.webp" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Arijit, All The Waye</h1>
+                <p class="lead">Arijit Singh, the maestro of soulful melodies, resonates deeply with millions through his timeless tracks. His vast repertoire offers a range of emotions, from heartwarming nostalgia to poignant sorrow. With an adeptness for crafting chart-topping hits, Arijit Singh's music captures life's essence. His songs, a solace for many, encapsulate the human experience. Access his collection easily, offering a musical journey that's both enriching and comforting.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Play</button>
+                  <button type="button" class="btn btn-outline-secondary btn-lg px-4">Follow</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+   <div class="container1">
+    <div class="songList"> <h1>Best Of Arijit Singh</h1>
+    <div class="container2">
+      <div class="songItem">
+        <img src="./IMG/83.jpg" alt="83">
+        <span>Jeetega Jeetega</span>
+        <span class="songlistplay">
+            <span class="timestamp">03:57
+                <i class="fa-solid fa-play" onclick="playJeetegaJeetega()"></i>
+                <i class="fa-solid fa-pause" onclick="pauseJeetegaJeetega()"></i>
+            </span>
+        </span>
+        <audio id="audioJeetegaJeetega" src="./SONGS/Jeetega Jeetega.mp3"></audio>
+    </div>
+    
+    <div class="songItem">
+        <img src="./IMG/AGAR TUM SAATH HO.jpg" alt="agar tum saath ho">
+        <span>Agar Tum Saath Ho</span>
+        <span class="songlistplay">
+            <span class="timestamp">05:41
+                <i class="fa-solid fa-play" onclick="playAgarTumSaathHo()"></i>
+                <i class="fa-solid fa-pause" onclick="pauseAgarTumSaathHo()"></i>
+            </span>
+        </span>
+        <audio id="audioAgarTumSaathHo" src="./SONGS/Agar Tum Saath Ho_64(PagalWorld.com.pe).mp3"></audio>
+    </div>
+    
+    <script>
+        function playJeetegaJeetega() {
+            var audio = document.getElementById("audioJeetegaJeetega");
+            audio.play();
+        }
+    
+        function pauseJeetegaJeetega() {
+            var audio = document.getElementById("audioJeetegaJeetega");
+            audio.pause();
+        }
+    
+        function playAgarTumSaathHo() {
+            var audio = document.getElementById("audioAgarTumSaathHo");
+            audio.play();
+        }
+    
+        function pauseAgarTumSaathHo() {
+            var audio = document.getElementById("audioAgarTumSaathHo");
+            audio.pause();
+        }
+    </script>
+    <div class="songItem">
+      <img src="./IMG/naihatiboroma.webp" alt="BOROMA">
+      <span>Mon Re Krishi Kaaj Janona</span>
+      <span class="songlistplay">
+          <span class="timestamp">04:52
+              <i class="fa-solid fa-play" onclick="playMonReKrishiKaaj()"></i>
+              <i class="fa-solid fa-pause" onclick="pauseMonReKrishiKaaj()"></i>
+          </span>
+      </span>
+      <audio id="audioMonReKrishiKaaj" src="./SONGS/Mon-Re-Krishikaj-Janona.mp3"></audio>
+  </div>
+  
+  <div class="songItem">
+      <img src="./IMG/KESARIYA.jpg" alt="Deva">
+      <span>Deva Deva</span>
+      <span class="songlistplay">
+          <span class="timestamp">04:39
+              <i class="fa-solid fa-play" onclick="playDevaDeva()"></i>
+              <i class="fa-solid fa-pause" onclick="pauseDevaDeva()"></i>
+          </span>
+      </span>
+      <audio id="audioDevaDeva" src="./SONGS/Deva Deva(PagalWorld.com.se).mp3"></audio>
+  </div>
+  
+  <script>
+      function playMonReKrishiKaaj() {
+          var audio = document.getElementById("audioMonReKrishiKaaj");
+          audio.play();
+      }
+  
+      function pauseMonReKrishiKaaj() {
+          var audio = document.getElementById("audioMonReKrishiKaaj");
+          audio.pause();
+      }
+  
+      function playDevaDeva() {
+          var audio = document.getElementById("audioDevaDeva");
+          audio.play();
+      }
+  
+      function pauseDevaDeva() {
+          var audio = document.getElementById("audioDevaDeva");
+          audio.pause();
+      }
+  </script>
+  
+  <div class="songItem">
+    <img src="./IMG/HAWAYEIN.jpg" alt="Hawayein">
+    <span>Hawayein</span>
+    <span class="songlistplay">
+        <span class="timestamp">04:50
+            <i class="fa-solid fa-play" onclick="playHawayein()"></i>
+            <i class="fa-solid fa-pause" onclick="pauseHawayein()"></i>
+        </span>
+    </span>
+    <audio id="audioHawayein" src="./SONGS/HAWAYEIN AS.mp3"></audio>
+</div>
+
+<div class="songItem">
+    <img src="./IMG/DOSHOMNEW.jpg" alt="baunduleGhuri">
+    <span>Baundule Ghuri</span>
+    <span class="songlistplay">
+        <span class="timestamp">03:55
+            <i class="fa-solid fa-play" onclick="playbaunduleGhuri()"></i>
+            <i class="fa-solid fa-pause" onclick="pausebaunduleGhuri()"></i>
+        </span>
+    </span>
+    <audio id="audiobaunduleGhuri" src="./SONGS/Baundulegjuri.mp3"></audio>
+</div>
+
+<script>
+    function playHawayein() {
+        var audio = document.getElementById("audioHawayein");
+        audio.play();
+    }
+
+    function pauseHawayein() {
+        var audio = document.getElementById("audioHawayein");
+        audio.pause();
+    }
+
+    function playbaunduleGhuri() {
+        var audio = document.getElementById("audiobaunduleGhuri");
+        audio.play();
+    }
+
+    function pausebaunduleGhuri() {
+        var audio = document.getElementById("audiobaunduleGhuri");
+        audio.pause();
+    }
+</script>
+
+    
+            
+            
+    </div>
+    </div>
+   
+    
+    
+</div>
+
+
+
+
+
+
+<div class="buttom">
+    <input type="range" name="range" id="myProgressBar" min="0" max="100">
+    <div class="icons">
+        <!--5-->
+        <i class="fa-solid fa-backward"></i>
+        <i class="fa-solid fa-play"></i>
+        <i class="fa-solid fa-forward"></i>
+        
+    </div>
+</div>
+
+
+<footer class="footer">
+D@9
+</footer>
+
+
+    
+</body>
+</html>
